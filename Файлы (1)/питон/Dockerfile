@@ -1,0 +1,5 @@
+FROM python:alpine
+LABEL version = "1.0.1"
+WORKDIR /app
+COPY . /app/
+CMD ["python", "test.py"]
